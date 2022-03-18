@@ -39,7 +39,11 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
-
+  server: {
+    port:  2080, // default: 2085
+    host: '0.0.0.0', // default: localhost
+    timing: false
+  },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
